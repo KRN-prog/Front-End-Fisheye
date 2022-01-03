@@ -24,6 +24,29 @@ h1 {
     margin-left: 100px;
 }
 
+.aboutPhotographer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.aboutPhotographer--href{
+    text-decoration: none;
+    color: #000;
+}
+
+.inlineElements{
+    display: inline-block;
+    margin: auto;
+}
+
+.cityCountry{
+    color: #901C1C;
+}
+
+.pricePerDay{
+    color: #a6a6a6;
+}
+
 .photographer_section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -37,6 +60,7 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .photographer_section article h2 {
@@ -47,4 +71,6 @@ h1 {
 .photographer_section article img {
     height: 200px;
     width: 200px;
+    border-radius: 100px;
+    object-fit: cover;
 }
