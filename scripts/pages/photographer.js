@@ -208,6 +208,7 @@ function PhotographerInput(photographer, medias, urlParams){
                 mediaContainer[sortedByTitleIndex].prepend(imgMedia);
                 imgMedia.setAttribute("src", "./Sample Photos/"+nameFile+"/"+mediasArray[sortedByTitleIndex].image);
                 imgMedia.alt = mediasArray[sortedByTitleIndex].alt;
+                titleMedia[sortedByTitleIndex].textContent = mediasArray[sortedByTitleIndex].title;
             }
             heartsMedia[sortedByTitleIndex].innerHTML = mediasArray[sortedByTitleIndex].likes+'<i class="fas fa-heart heartIcon" aria-hidden="true"></i>';
             sortedByTitleIndex++;
@@ -322,6 +323,7 @@ function PhotographerInput(photographer, medias, urlParams){
                 mediaContainer[sortedByTitleIndex].prepend(imgMedia);
                 imgMedia.setAttribute("src", "./Sample Photos/"+nameFile+"/"+mediasArray[sortedByTitleIndex].image);
                 imgMedia.alt = mediasArray[sortedByTitleIndex].alt;
+                titleMedia[sortedByTitleIndex].textContent = mediasArray[sortedByTitleIndex].title;
             }
             heartsMedia[sortedByTitleIndex].innerHTML = mediasArray[sortedByTitleIndex].likes+'<i class="fas fa-heart heartIcon" aria-hidden="true"></i>';
             sortedByTitleIndex++;
