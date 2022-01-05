@@ -12,6 +12,7 @@ function photographerFactory(photographers, medias) {
 
         const img = document.createElement('img');
         img.setAttribute("src", picture);
+        img.alt = name;
         const h2 = document.createElement('h2');
         h2.textContent = name;
         article.appendChild(aHrefArticle);
