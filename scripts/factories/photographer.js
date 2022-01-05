@@ -1,6 +1,4 @@
 function photographerFactory(photographers, medias) {
-    //console.log(photographers);
-
     const {city, country, name, portrait, price, tagline, id} = photographers;
     const picture = `./assets/photographers/${portrait}`;
     function getUserCardDOM() {
@@ -22,7 +20,6 @@ function photographerFactory(photographers, medias) {
         const url_string = window.location.href;
         const url = new URL(url_string);
         const getUrlParams = url.searchParams.get("id");
-        console.log(getUrlParams);
         if (getUrlParams) {
             PhotographerInput(photographers, medias, getUrlParams);
         }else{
