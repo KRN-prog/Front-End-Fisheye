@@ -18,7 +18,6 @@
         const url_string = window.location.href;
         const url = new URL(url_string);
         const getUrlParams = url.searchParams.get("id");
-        //console.log(getUrlParams);
         if (getUrlParams && getUrlParams != null) {
             const photographerModel = PhotographerInput(photographers, medias, getUrlParams);
         }else{
