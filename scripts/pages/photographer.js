@@ -153,6 +153,7 @@ function PhotographerInput(photographer, medias, urlParams){
                 imgMedia.id = "media"+i;
                 mediaContainer.prepend(imgMedia);
                 imgMedia.setAttribute("src", "./Sample Photos/"+nameFile+"/"+medias.image);
+                imgMedia.alt = medias.alt;
                 break;
         }
     }
@@ -206,6 +207,7 @@ function PhotographerInput(photographer, medias, urlParams){
                 imgMedia.id = "media"+sortedByTitleIndex;
                 mediaContainer[sortedByTitleIndex].prepend(imgMedia);
                 imgMedia.setAttribute("src", "./Sample Photos/"+nameFile+"/"+mediasArray[sortedByTitleIndex].image);
+                imgMedia.alt = mediasArray[sortedByTitleIndex].alt;
             }
             heartsMedia[sortedByTitleIndex].innerHTML = mediasArray[sortedByTitleIndex].likes+'<i class="fas fa-heart heartIcon" aria-hidden="true"></i>';
             sortedByTitleIndex++;
@@ -261,6 +263,7 @@ function PhotographerInput(photographer, medias, urlParams){
                 imgMedia.id = "media"+sortedByTitleIndex;
                 mediaContainer[sortedByTitleIndex].prepend(imgMedia);
                 imgMedia.setAttribute("src", "./Sample Photos/"+nameFile+"/"+mediasArray[sortedByTitleIndex].image);
+                imgMedia.alt = mediasArray[sortedByTitleIndex].alt;
                 titleMedia[sortedByTitleIndex].textContent = mediasArray[sortedByTitleIndex].title;
             }
             heartsMedia[sortedByTitleIndex].innerHTML = mediasArray[sortedByTitleIndex].likes+'<i class="fas fa-heart heartIcon" aria-hidden="true"></i>';
@@ -308,7 +311,7 @@ function PhotographerInput(photographer, medias, urlParams){
 
                 const videoSourceMedia = document.createElement('source');
                 videoMedia.appendChild(videoSourceMedia);
-                videoSourceMedia.setAttribute("src", "./Sample Photos/"+nameFile+"/"+mediasArray[sortedByTitleIndex].vidoe);
+                videoSourceMedia.setAttribute("src", "./Sample Photos/"+nameFile+"/"+mediasArray[sortedByTitleIndex].video);
                 titleMedia[sortedByTitleIndex].textContent = mediasArray[sortedByTitleIndex].title;
             }else{
                 currentMedia.remove();
@@ -318,6 +321,7 @@ function PhotographerInput(photographer, medias, urlParams){
                 imgMedia.id = "media"+sortedByTitleIndex;
                 mediaContainer[sortedByTitleIndex].prepend(imgMedia);
                 imgMedia.setAttribute("src", "./Sample Photos/"+nameFile+"/"+mediasArray[sortedByTitleIndex].image);
+                imgMedia.alt = mediasArray[sortedByTitleIndex].alt;
             }
             heartsMedia[sortedByTitleIndex].innerHTML = mediasArray[sortedByTitleIndex].likes+'<i class="fas fa-heart heartIcon" aria-hidden="true"></i>';
             sortedByTitleIndex++;
